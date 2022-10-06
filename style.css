@@ -48,6 +48,9 @@ main .portfolio .member-info .about {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+main .portfolio .buttons {
+  user-select: none;
+}
 main .portfolio .buttons .btn {
   background-color: #fff;
   border: none;
