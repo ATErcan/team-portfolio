@@ -36,9 +36,6 @@ main .portfolio .img-div img {
   height: 200px;
   border-radius: 50%;
 }
-main .portfolio .member-info {
-  /* text-align: center; */
-}
 main .portfolio .member-info .name {
   font-size: 1.5rem;
   letter-spacing: 3px;
@@ -62,7 +59,7 @@ main .portfolio .buttons .btn {
 main .portfolio .buttons .random-btn {
   background-color: #880808;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border: none;
   border-radius: 20px;
   cursor: pointer;

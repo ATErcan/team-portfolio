@@ -85,6 +85,18 @@ window.addEventListener("DOMContentLoaded", () => {
   shownMember();
 });
 
+const repeatNavigate = () => {
+  if (currentMember > members.length - 1) {
+    currentMember = 0;
+  } else if (currentMember < 0) {
+    currentMember = members.length - 1;
+  }
+};
+
+const chooseTeamLead = () => {
+  currentMember = Math.floor(Math.random() * members.length);
+};
+
 buttons.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-chevron-left")) {
     currentMember--;
@@ -94,13 +106,9 @@ buttons.addEventListener("click", (e) => {
     currentMember++;
     repeatNavigate();
     shownMember();
+  } else if (e.target.classList.contains("random-btn")) {
+    chooseTeamLead();
+    console.log(currentMember);
+    shownMember();
   }
 });
-
-const repeatNavigate = () => {
-  if (currentMember > members.length - 1) {
-    currentMember = 0;
-  } else if (currentMember < 0) {
-    currentMember = members.length - 1;
-  }
-};
