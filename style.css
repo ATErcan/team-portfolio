@@ -57,6 +57,7 @@ main .portfolio .buttons .btn {
   font-size: 1.5rem;
   color: #00f;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 main .portfolio .buttons .random-btn {
   background-color: #880808;
@@ -64,4 +65,5 @@ main .portfolio .buttons .random-btn {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }

@@ -32,8 +32,7 @@ const member5 = {
 const member6 = {
   name: "F4173-Yasin",
   job: "Watchman",
-  about: `"I'm here to just watch and listen, but not to learn. I already know these things." 
-    -Yasin(probably)`,
+  about: `"I'm here to just watch and listen, but not to learn. I already know these things." -Yasin(probably)`,
   img: "https://avatars.githubusercontent.com/u/69001188?v=4",
 };
 const member7 = {
@@ -45,7 +44,7 @@ const member7 = {
 const member8 = {
   name: "F4191-Kemal",
   job: "Among-Us",
-  about: "Talented silent member.",
+  about: "Talented, silent member.",
   img: "https://avatars.githubusercontent.com/u/81470704?v=4",
 };
 const member9 = {
@@ -71,6 +70,7 @@ const memberImg = document.querySelector(".member-img");
 const memberName = document.querySelector(".name");
 const memberRole = document.querySelector(".job");
 const memberInfo = document.querySelector(".about");
+const buttons = document.querySelector(".buttons");
 
 let currentMember = 0;
 
@@ -81,4 +81,26 @@ const shownMember = () => {
   memberInfo.textContent = members[currentMember].about;
 };
 
-shownMember();
+window.addEventListener("DOMContentLoaded", () => {
+  shownMember();
+});
+
+buttons.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-chevron-left")) {
+    currentMember--;
+    repeatNavigate();
+    shownMember();
+  } else if (e.target.classList.contains("fa-chevron-right")) {
+    currentMember++;
+    repeatNavigate();
+    shownMember();
+  }
+});
+
+const repeatNavigate = () => {
+  if (currentMember > members.length - 1) {
+    currentMember = 0;
+  } else if (currentMember < 0) {
+    currentMember = members.length - 1;
+  }
+};
