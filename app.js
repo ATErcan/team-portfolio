@@ -71,7 +71,8 @@ const memberName = document.querySelector(".name");
 const memberRole = document.querySelector(".job");
 const memberInfo = document.querySelector(".about");
 const buttons = document.querySelector(".buttons");
-
+const prevBtn = document.querySelector(".left-arrow");
+const nextBtn = document.querySelector(".right-arrow");
 let currentMember = 0;
 
 const shownMember = () => {
@@ -108,7 +109,20 @@ buttons.addEventListener("click", (e) => {
     shownMember();
   } else if (e.target.classList.contains("random-btn")) {
     chooseTeamLead();
-    console.log(currentMember);
     shownMember();
   }
+});
+
+prevBtn.addEventListener("mouseover", () => {
+  document.querySelector(".ani-left").classList.add("left");
+});
+prevBtn.addEventListener("mouseout", () => {
+  document.querySelector(".ani-left").classList.remove("left");
+});
+
+nextBtn.addEventListener("mouseover", () => {
+  document.querySelector(".ani-right").classList.add("right");
+});
+nextBtn.addEventListener("mouseout", () => {
+  document.querySelector(".ani-right").classList.remove("right");
 });
