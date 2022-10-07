@@ -13,6 +13,7 @@ main .our-team h2 {
   padding: 2rem;
   text-align: center;
   margin-bottom: 3rem;
+  font-family: "Cinzel", serif;
 }
 main .portfolio {
   border-radius: 30px;
@@ -29,24 +30,50 @@ main .portfolio {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 main .portfolio .img-div {
+  position: relative;
   margin: 2rem auto 1rem;
+}
+main .portfolio .img-div .badge {
+  position: absolute;
+  top: 2rem;
+  left: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  background-color: #00f;
+  color: #fff;
+  z-index: 1;
+  border-radius: 50%;
 }
 main .portfolio .img-div img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .portfolio .member-info .name {
   font-size: 1.5rem;
   letter-spacing: 3px;
+  font-family: "IBM Plex Mono", monospace;
 }
 main .portfolio .member-info .job {
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #333;
 }
 main .portfolio .member-info .about {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  padding: 0 3.3rem;
+  font-family: "Kalam", cursive;
 }
 main .portfolio .buttons {
   user-select: none;
@@ -55,7 +82,7 @@ main .portfolio .buttons .btn {
   background-color: #fff;
   border: none;
   font-size: 1.5rem;
-  color: #00f;
+  color: #057812;
   margin-bottom: 1rem;
   cursor: pointer;
 }
