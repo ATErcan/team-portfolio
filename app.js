@@ -32,7 +32,7 @@ const member5 = {
 const member6 = {
   name: "F4173-Yasin",
   job: "Watchman",
-  about: `"I'm here to just watch and listen, but not to learn. I already know these things." - Yasin(probably)`,
+  about: `"I'm here to just watch and listen, but not to learn. I already know these things." \n- Yasin(probably)`,
   img: "https://avatars.githubusercontent.com/u/69001188?v=4",
 };
 const member7 = {
@@ -79,7 +79,7 @@ const shownMember = () => {
   memberImg.setAttribute("src", `${members[currentMember].img}`);
   memberName.textContent = members[currentMember].name;
   memberRole.textContent = members[currentMember].job;
-  memberInfo.textContent = members[currentMember].about;
+  memberInfo.innerText = members[currentMember].about;
 };
 
 window.addEventListener("DOMContentLoaded", () => {

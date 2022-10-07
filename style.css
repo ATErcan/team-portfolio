@@ -6,7 +6,10 @@
 header {
   text-align: center;
   font-size: 2.2rem;
-  margin: 3rem 0 4rem;
+  margin: 2rem 0 4rem;
+}
+main {
+  padding-bottom: 2rem;
 }
 main .our-team h2 {
   font-size: 2.5rem;
@@ -131,5 +134,83 @@ main .portfolio .buttons .random-btn:hover {
   100% {
     opacity: 0;
     transform: translateX(50px);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  main .portfolio {
+    border-radius: 30px;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    font-size: 2rem;
+    margin: 2rem 0 2rem;
+  }
+  main .our-team h2 {
+    font-size: 2.2rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  main .portfolio {
+    border-radius: 30px;
+    width: 50%;
+    padding: 0 1rem 2.5rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 1.2rem;
+  }
+  main .our-team h2 {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  main .portfolio {
+    border-radius: 30px;
+    width: 70%;
+    padding: 0 1rem 2.5rem;
+  }
+  main .portfolio .img-div img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  header {
+    font-size: 1rem;
+    margin: 1.2rem 0 1.2rem;
+  }
+  main .our-team h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  main .portfolio {
+    border-radius: 30px;
+    width: 90%;
+    padding: 0 1rem 2.5rem;
+  }
+  main .portfolio .img-div img {
+    width: 160px;
+    height: 160px;
+  }
+  main .portfolio .member-info .name {
+    font-size: 1.2rem;
+  }
+  main .portfolio .member-info .about {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  main .portfolio .buttons .btn {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  main .portfolio .buttons .random-btn {
+    padding: 0.4rem 7px;
+    border-radius: 10px;
   }
 }
